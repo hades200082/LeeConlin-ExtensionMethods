@@ -6,7 +6,6 @@
 		<Authors>leeconlin</Authors>
 		<Company>Lee Conlin</Company>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-		<PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
 		<PackageLicenseFile>https://github.com/hades200082/LeeConlin-ExtensionMethods/blob/master/LICENSE.md</PackageLicenseFile>
 		<RepositoryUrl>https://github.com/hades200082/LeeConlin-ExtensionMethods</RepositoryUrl>
     </PropertyGroup>
