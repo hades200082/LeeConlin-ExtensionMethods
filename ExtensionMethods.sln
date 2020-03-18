@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeeConlin.ExtensionMethods", "LeeConlin.ExtensionMethods\LeeConlin.ExtensionMethods.csproj", "{9C682BD7-7559-43D2-AEB0-50AE0722CDC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeeConlin.ExtensionMethods.Tests", "LeeConlin.ExtensionMethods.Tests\LeeConlin.ExtensionMethods.Tests.csproj", "{67A30399-9735-4059-A9B1-D7D906B2F30A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C682BD7-7559-43D2-AEB0-50AE0722CDC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C682BD7-7559-43D2-AEB0-50AE0722CDC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C682BD7-7559-43D2-AEB0-50AE0722CDC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C682BD7-7559-43D2-AEB0-50AE0722CDC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67A30399-9735-4059-A9B1-D7D906B2F30A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A30399-9735-4059-A9B1-D7D906B2F30A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A30399-9735-4059-A9B1-D7D906B2F30A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A30399-9735-4059-A9B1-D7D906B2F30A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
