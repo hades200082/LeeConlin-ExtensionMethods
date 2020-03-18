@@ -3,17 +3,14 @@
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
-    <title>LeeConlin.Kentico12.MVC.WidgetResolver</title>
+    <title>LeeConlin.ExtensionMethods</title>
     <authors>leeconlin</authors>
     <owners>leeconlin</owners>
-    <licenseUrl>https://github.com/hades200082/Kentico12-MVC-WidgetResolver/blob/master/LICENSE.md</licenseUrl>
-    <projectUrl>https://github.com/hades200082/Kentico12-MVC-WidgetResolver</projectUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>A widget resolver for use with Kentico 12 MVC sites and allowing the use of Portal Engine widgets as structured data in RichText areas.</description>
+    <licenseUrl>https://github.com/hades200082/LeeConlin-ExtensionMethods/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/hades200082/LeeConlin-ExtensionMethods</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>A set of common and useful extension methods for use in .Net Core/Framework projects.</description>
     <copyright>Copyright Lee Conlin 2019</copyright>
-    <tags>kentico mvc</tags>
-    <dependencies>
-      <dependency id="Kentico.Libraries" version="[12.0,12.1)" />
-    </dependencies>
+    <tags>extension methods</tags>
   </metadata>
 </package>
