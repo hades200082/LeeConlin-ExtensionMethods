@@ -14,3 +14,10 @@ If you want to contribute to this project you must follow the rules below.
 4. Add unit tests to cover your changes and their various possible outcomes
 5. Submit a pull request from your feature branch in github
 
+## Contributor credits
+
+Feel free to add yourself to the **end** of the list of contributors in the main readme as part of your pull request. 
+
+Credit entries should take the following format:
+
+- {Name of contributor} ({link to github profile})
