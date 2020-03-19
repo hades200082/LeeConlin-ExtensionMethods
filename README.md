@@ -2,6 +2,8 @@
 
 This repo contains the source for the `LeeConlin.ExtensionMethods` nuget package.
 
+Master branch: [![Build status](https://ci.appveyor.com/api/projects/status/v6hm7m45f9nyl9ib/branch/master?svg=true)](https://ci.appveyor.com/project/hades200082/leeconlin-extensionmethods/branch/master)
+
 ## Installation with NuGet Package Manager
 
 ```bash
