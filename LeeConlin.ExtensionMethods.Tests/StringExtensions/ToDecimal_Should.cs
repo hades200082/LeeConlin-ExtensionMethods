@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading;
 using FluentAssertions;
 using Xunit;
 
@@ -48,7 +49,7 @@ namespace LeeConlin.ExtensionMethods.Tests.StringExtensions
         [MemberData(nameof(TestData))]
         public void Return_Correct_Decimal_Value_For_Decimal_Strings(string sut, decimal expected)
         {
-            sut.ToDecimal().Should().Be(expected);
+            sut.ToDecimal().Should().Be(expected, "Current culture is {0}", Thread.CurrentThread.CurrentCulture.Name);
         }
     }
 }
