@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Globalization;
 using System.Threading;
 using FluentAssertions;
 using Xunit;
@@ -7,6 +8,13 @@ namespace LeeConlin.ExtensionMethods.Tests.StringExtensions
 {
     public class ToDecimal_Should
     {
+        public ToDecimal_Should()
+        {
+            // set culture to control tests
+            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("en-GB");
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-GB");
+        }
+        
         [Theory]
         [InlineData("abc")]
         [InlineData("6..2")]
