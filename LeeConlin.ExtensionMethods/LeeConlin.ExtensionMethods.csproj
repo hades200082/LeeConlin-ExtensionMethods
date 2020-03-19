@@ -8,5 +8,11 @@
 		<PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
 		<RepositoryUrl>https://github.com/hades200082/LeeConlin-ExtensionMethods</RepositoryUrl>
 		<TargetFramework>netstandard2.0</TargetFramework>
+		<Title>LeeConlin.ExtensionMethods</Title>
+		<Copyright>leeconlin</Copyright>
+		<PackageProjectUrl>https://github.com/hades200082/LeeConlin-ExtensionMethods</PackageProjectUrl>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile>bin\Debug\LeeConlin.ExtensionMethods.xml</DocumentationFile>
     </PropertyGroup>
 </Project>

@@ -14,7 +14,7 @@ I plan to keep adding to this package as I find/create more useful extension met
 
 ## Supported .Net Versions
 
-Written in **.Net Standard 2.0 this package should be compatible with:
+Written in **.Net Standard 2.0** this package should be compatible with:
 
 - .Net Core 2.0+
 - .Net Framework 4.6.1+<sup>1</sup>
