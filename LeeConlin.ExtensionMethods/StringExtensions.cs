@@ -271,11 +271,13 @@ namespace LeeConlin.ExtensionMethods
                 case "yes":
                 case "true":
                 case "1":
+                case "yep":
+                case "y":
                     return true;
 
                 default:
-                    if (text.ToInt() == 1) return true;
-                    if (text.ToDecimal() == 1m) return true;
+                    if (text.ToInt() != 0) return true;
+                    if (text.ToDecimal() != 0) return true;
                     
                     // otherwise it's not truthy
                     return false;

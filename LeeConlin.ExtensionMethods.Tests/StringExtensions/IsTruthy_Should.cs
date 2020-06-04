@@ -10,6 +10,7 @@ namespace LeeConlin.ExtensionMethods.Tests.StringExtensions
         [InlineData("yes")]
         [InlineData("yEs")]
         [InlineData("YES")]
+        [InlineData("Yep")]
         [InlineData("true")]
         [InlineData("TRUE")]
         [InlineData("True")]
@@ -30,15 +31,14 @@ namespace LeeConlin.ExtensionMethods.Tests.StringExtensions
         [InlineData("no")]
         [InlineData("NO")]
         [InlineData("No")]
+        [InlineData("Nope")]
         [InlineData("0")]
         [InlineData("0.0")]
         [InlineData("0.00000")]
-        [InlineData("0.00001")]
-        [InlineData("2")]
         [InlineData("abc")]
         [InlineData(" ")]
         [InlineData(null)]
-        public void Return_True_For_Anything_Not_Truthy(string sut)
+        public void Return_False_For_Anything_Not_Truthy(string sut)
         {
             sut.IsTruthy().Should().BeFalse();
         }
