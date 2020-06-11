@@ -209,6 +209,29 @@ namespace LeeConlin.ExtensionMethods
                 return sb.ToString();
             }
         }
+        
+
+        /// <summary>
+        /// Create an SHA512 hash of a string of text.
+        /// </summary>
+        /// <param name="text">Text to hash</param>
+        /// <param name="uppercase"></param>
+        /// <returns>The SHA512 hash of the input string</returns>
+        public static string ToSha512Hash(this string text, bool uppercase = true)
+        {
+            using (var sha512 = new System.Security.Cryptography.SHA512Managed())
+            {
+                var hash = sha512.ComputeHash(Encoding.UTF8.GetBytes(text));
+                var sb = new StringBuilder(hash.Length * 2);
+
+                foreach (byte b in hash)
+                {
+                    sb.Append(uppercase ? b.ToString("X2") : b.ToString("x2"));
+                }
+
+                return sb.ToString();
+            }
+        }
 
         /// <summary>
         /// Converts the textual representation of an integer to an int data type.
