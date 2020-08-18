@@ -29,6 +29,9 @@ namespace LeeConlin.ExtensionMethods.Tests.StringExtensions
         [InlineData("abc def ghi jkl mno pqr stu vwx yz", 7, "abc def")]
         [InlineData("abc def ghi jkl mno pqr stu vwx yz", 8, "abc def")]
         [InlineData("abc def ghi jkl mno pqr stu vwx yz", 34, "abc def ghi jkl mno pqr stu vwx yz")]
+        [InlineData("abcdefghijklmnopqrstuvwxyz", 3, "abc")] // If no word boundary then just truncate
+        [InlineData("abc, defg", 6, "abc")] // remove trailing mid-punctuation
+        [InlineData("abc; defg", 6, "abc")] // remove trailing mid-punctuation
         public void Truncate_To_Character_Count_At_Word_Break(string text, int maxLength, string expected)
         {
             var sut = text.Truncate(maxLength, StringTruncateStyle.MaxCharactersAtWordBoundry);
