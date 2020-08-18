@@ -133,7 +133,10 @@ namespace LeeConlin.ExtensionMethods
                     if (!(text.Length <= maxLength))
                     {
                         text = text.Substring(0, maxLength + 1);
-                        text = text.Substring(0, text.LastIndexOf(' ')).TrimEnd();
+
+                        var lastIndex = text.LastIndexOf(' ');
+                        text = text.Substring(0, lastIndex == -1 ? maxLength : lastIndex)
+                            .TrimEnd(',',';',':','.','!','?',' ');
                         text = text + stringToAppendIfTruncated;
                     }
 
