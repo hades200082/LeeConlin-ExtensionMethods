@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
+using System.Xml.Serialization;
 
 namespace LeeConlin.ExtensionMethods
 {
@@ -308,6 +310,30 @@ namespace LeeConlin.ExtensionMethods
                     // otherwise it's not truthy
                     return false;
             }
+        }
+
+        /// <summary>
+        /// Attempts a simple XML deserialisation into an object of the specified type. Will use XML attributes on the target types class if present.
+        /// </summary>
+        /// <param name="xml"></param>
+        /// <typeparam name="T">The type to deserialise into.</typeparam>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        public static T FromXml<T>(this string xml)
+            where T : class, new()
+        {
+            if (string.IsNullOrEmpty(xml))
+                throw new ArgumentNullException(nameof(xml));
+
+            var serializer = new XmlSerializer(typeof(T));
+            T result;
+            
+            using (TextReader reader = new StringReader(xml))
+            {
+                result = (T)serializer.Deserialize(reader);
+            }
+
+            return result;
         }
     }
 
